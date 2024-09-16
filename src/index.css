@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Centered File Upload */
+#uploadContainer {
+  margin: 20px 0;
+}
+
+/* Button Styles */
+button,
+a {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active,
+a:active {
+  transform: scale(0.95);
+}
+
+/* Optional Settings Toggle */
+#toggleSettings {
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #007BFF;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+#toggleSettings:hover {
+  color: #0056b3;
+}
+
+.optional-settings {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.optional-settings.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Range inputs */
+input[type="range"] {
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Image containers */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  color: #333;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  color: #555;
+}
